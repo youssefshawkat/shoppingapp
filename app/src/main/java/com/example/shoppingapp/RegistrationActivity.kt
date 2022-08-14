@@ -1,14 +1,13 @@
 package com.example.shoppingapp
 
 import android.os.Bundle
-import android.util.Log
+
 import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
-import androidx.room.Room
+
 import com.example.shoppingapp.network.User
-import com.ntgclarity.authenticator.database.User
-import com.ntgclarity.authenticator.database.UsersDatabase
+
 
 class RegistrationActivity : AppCompatActivity() {
     var etName: EditText? = null
@@ -20,9 +19,9 @@ class RegistrationActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registration)
 
-        etName = findViewById<EditText>(R.id.et_name)
-        etEmail = findViewById<EditText>(R.id.et_email)
-        etPassword = findViewById<EditText>(R.id.et_password)
+        etName = findViewById(R.id.et_name)
+        etEmail = findViewById(R.id.et_email)
+        etPassword = findViewById(R.id.et_password)
 
         val btnSave = findViewById<Button>(R.id.btn_save)
 
