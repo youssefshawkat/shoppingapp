@@ -42,7 +42,6 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:layout_marginTop="20dp"
-        android:backgroundTint="#050505"
         android:text="@string/sign_in_btn_txt" />
 
     <Button
@@ -52,7 +51,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
 
-        android:backgroundTint="#050505"
+        android:backgroundTint="#FFC30F"
         android:text="@string/register_btn_txt" />
 
 
