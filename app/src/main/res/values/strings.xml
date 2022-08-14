@@ -3,5 +3,8 @@
     <string name="hint_name">Name</string>
     <string name="email">Email</string>
     <string name="hint_password">Password</string>
-    <string name="btn_save">save</string>
+    <string name="save_btn">save</string>
+    <string name="sign_in_btn_txt">sign in</string>
+    <string name="register_btn_txt">Register</string>
+    <string name="name_hint">Name</string>
 </resources>

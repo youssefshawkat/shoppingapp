@@ -23,7 +23,7 @@ class RegistrationActivity : AppCompatActivity() {
         etEmail = findViewById(R.id.et_email)
         etPassword = findViewById(R.id.et_password)
 
-        val btnSave = findViewById<Button>(R.id.btn_save)
+        val btnSave = findViewById<Button>(R.id.save_btn)
 
 
         btnSave.setOnClickListener {
