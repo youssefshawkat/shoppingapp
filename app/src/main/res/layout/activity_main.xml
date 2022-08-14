@@ -3,12 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
     android:layout_margin="15dp"
     android:orientation="vertical"
+    android:padding="10dp"
     tools:context=".MainActivity">
-
-
 
 
     <EditText
@@ -16,11 +14,12 @@
         android:id="@+id/Login_inputField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:ems="10"
         android:hint="@string/email"
-        android:layout_margin="10dp"
-        android:inputType="textEmailAddress" />
-
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:importantForAutofill="no" />
 
 
     <EditText
@@ -29,18 +28,21 @@
         android:id="@+id/Password_inputField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
         android:layout_margin="10dp"
+        android:ems="10"
         android:hint="@string/hint_password"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:importantForAutofill="no" />
 
     <Button
 
         android:id="@+id/SignIn_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#050505"
         android:text="@string/sign_in_btn_txt" />
 
     <Button
@@ -50,6 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
 
+        android:backgroundTint="#050505"
         android:text="@string/register_btn_txt" />
 
 

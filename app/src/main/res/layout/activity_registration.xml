@@ -3,9 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="15dp"
     android:orientation="vertical"
     android:padding="10dp"
-    android:layout_margin="15dp"
     tools:context=".RegistrationActivity">
 
     <EditText
@@ -13,10 +13,12 @@
         android:id="@+id/et_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:ems="10"
         android:hint="@string/name_hint"
-        android:layout_margin="10dp"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:importantForAutofill="no" />
 
 
     <EditText
@@ -24,11 +26,12 @@
         android:id="@+id/et_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:ems="10"
         android:hint="@string/email"
-        android:layout_margin="10dp"
-        android:inputType="textEmailAddress" />
-
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:importantForAutofill="no" />
 
 
     <EditText
@@ -37,10 +40,12 @@
         android:id="@+id/et_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:ems="10"
         android:hint="@string/hint_password"
-        android:layout_margin="10dp"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:importantForAutofill="no" />
 
 
     <Button
@@ -48,6 +53,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:backgroundTint="#050505"
         android:text="@string/save_btn" />
 
 
