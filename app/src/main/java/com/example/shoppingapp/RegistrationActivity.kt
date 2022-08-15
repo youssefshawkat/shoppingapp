@@ -13,6 +13,12 @@ class RegistrationActivity : AppCompatActivity() {
     var etName: EditText? = null
     var etEmail: EditText? = null
     var etPassword: EditText? = null
+    var etUserName: EditText? = null
+    var etCity: EditText? = null
+    var etAddress: EditText? = null
+    var etPhoneNumber: EditText? = null
+    var gender: String? = null
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
