@@ -17,9 +17,9 @@
         android:layout_margin="10dp"
         android:ems="10"
         android:hint="@string/email"
+        android:importantForAutofill="no"
         android:inputType="textEmailAddress"
-        android:minHeight="48dp"
-        android:importantForAutofill="no" />
+        android:minHeight="48dp" />
 
 
     <EditText
@@ -31,9 +31,9 @@
         android:layout_margin="10dp"
         android:ems="10"
         android:hint="@string/hint_password"
+        android:importantForAutofill="no"
         android:inputType="textPassword"
-        android:minHeight="48dp"
-        android:importantForAutofill="no" />
+        android:minHeight="48dp" />
 
     <Button
 

@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
 
         val btnRegistration = findViewById<Button>(R.id.Register_btn)
 
-        btnRegistration.setOnClickListener() {
+        btnRegistration.setOnClickListener {
             startRegistration()
         }
 
