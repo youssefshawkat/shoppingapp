@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".RegistrationActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:layout_margin="15dp"
     android:orientation="vertical"
-    android:padding="10dp"
-    tools:context=".RegistrationActivity">
+    android:padding="10dp">
+
 
     <EditText
 
@@ -17,8 +23,10 @@
         android:ems="10"
         android:hint="@string/name_hint"
         android:importantForAutofill="no"
-        android:inputType="textPassword"
-        android:minHeight="48dp" />
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        />
 
 
     <EditText
@@ -31,7 +39,22 @@
         android:hint="@string/email"
         android:importantForAutofill="no"
         android:inputType="textEmailAddress"
-        android:minHeight="48dp" />
+        android:minHeight="48dp"
+        android:textColorHint="#757575"/>
+
+
+    <EditText
+
+        android:id="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="@string/username_hint"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"/>
 
 
     <EditText
@@ -45,7 +68,77 @@
         android:hint="@string/hint_password"
         android:importantForAutofill="no"
         android:inputType="textPassword"
-        android:minHeight="48dp" />
+        android:minHeight="48dp"
+        android:textColorHint="#757575"/>
+
+
+    <EditText
+
+        android:id="@+id/et_phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="@string/phone_number_hint"
+        android:importantForAutofill="no"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        />
+
+
+    <EditText
+
+        android:id="@+id/et_City"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="@string/city_hint"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"/>
+
+    <EditText
+
+        android:id="@+id/et_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="@string/address_hint"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"/>
+
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_your_gender" />
+
+        <RadioButton
+            android:id="@+id/radio_male"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/male" />
+
+        <RadioButton
+            android:id="@+id/radio_female"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/female" />
+
+    </RadioGroup>
 
 
     <Button
@@ -58,3 +151,5 @@
 
 
 </LinearLayout>
+
+</ScrollView>

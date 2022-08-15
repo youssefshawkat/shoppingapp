@@ -7,4 +7,11 @@
     <string name="sign_in_btn_txt">sign in</string>
     <string name="register_btn_txt">Register</string>
     <string name="name_hint">Name</string>
+    <string name="username_hint">UserName</string>
+    <string name="phone_number_hint">Phone Number</string>
+    <string name="city_hint">City</string>
+    <string name="address_hint">Address</string>
+    <string name="select_your_gender">Select Your Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
 </resources>
