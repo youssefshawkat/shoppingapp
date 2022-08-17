@@ -33,6 +33,7 @@
         android:id="@+id/tv_most"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingStart="20dp"
         android:text="The most Popular "
         android:textColor="@color/black"
         android:textSize="25sp"
@@ -46,6 +47,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
+        android:paddingStart="20dp"
         android:text="clothes today"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -135,6 +137,7 @@
     </RadioGroup>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_products"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"

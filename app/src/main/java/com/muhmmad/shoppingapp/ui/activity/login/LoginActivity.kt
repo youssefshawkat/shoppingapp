@@ -11,6 +11,7 @@ import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import com.muhmmad.shoppingapp.R
 import com.muhmmad.shoppingapp.databinding.ActivityLoginBinding
+import com.muhmmad.shoppingapp.ui.activity.home.HomeActivity
 import com.muhmmad.shoppingapp.ui.activity.register.RegisterActivity
 
 class LoginActivity : AppCompatActivity() {
@@ -29,7 +30,13 @@ class LoginActivity : AppCompatActivity() {
 
         viewModel.loginResponse.observe(this) {
             Log.i(TAG, "Login Response: $it")
-            Toast.makeText(this, it.toString(), Toast.LENGTH_LONG).show()
+            if (it != null) {
+                token = it.token
+            }
+            if (it != null) {
+                name = it.email
+            }
+            startActivity(Intent(this, HomeActivity::class.java))
         }
 
         binding.btnLogin.setOnClickListener {
@@ -70,5 +77,10 @@ class LoginActivity : AppCompatActivity() {
             binding.inputPass.error = null
         }
         return valid
+    }
+
+    companion object {
+        var token: String? = null
+        var name: String? = null
     }
 }
