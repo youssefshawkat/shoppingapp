@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">shoppingapp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="invalid_pass">The password is invalid, please check your password</string>
+    <string name="email_alert_1">Please enter email address</string>
+    <string name="email_alert_2">Please enter valid email address</string>
+    <string name="pass_alert">Please enter password</string>
+</resources>
